@@ -15,6 +15,8 @@ This application consists of the below features:
 
 ## Project Snapshots
 
+![Screenshot](screenshots/mainPage.png)
+
 ## Installation
 
 To run the application locally, you will need to have Node.js and npm installed on your system. Then, follow these steps:
