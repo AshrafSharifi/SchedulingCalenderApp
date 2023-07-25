@@ -21,7 +21,7 @@ This application consists of the below features:
 
 ### - Create new event:
   
-![Screenshot](src/assets/images/screenshots/newEvent.png)=250x250
+![Screenshot](src/assets/images/screenshots/newEvent.png=250x250)
 
 ### - Create new event by clicking on calender cell:
   
