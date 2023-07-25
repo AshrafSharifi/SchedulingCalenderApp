@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;background-color: #eae6e9;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.header {
+    padding: 3%;
+  
+}
+
+.header-border {
+    border-bottom: 5px solid #c2185b;
+}
+
+.btn-new {
+    background-color: #c2185b;
+}
+
+
+.header-text-container{
+    position: relative;
+}
+.header-text-container img{
+    position: absolute ;
+    left: -2%;
+    bottom: -20%;
+}
+.header-icon-container{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-left: 60px;
+    /* border: 1px solid blue; */
+    perspective: 100px;
+}
+.header-icon-container img{
+    position: absolute;
+    /* bottom: -15%; */
+    /* border: 1px solid black; */
+    /* background: rgba(100,100,100,0.5); */
+    transform-style: preserve-3d;
+    transform: rotateY(15deg);
+}

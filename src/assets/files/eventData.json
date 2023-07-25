@@ -1,0 +1,16 @@
+[{
+    "id": "2307230350",
+    "resource": "H1",
+    "start": "2023-07-03",
+    "end": "2023-07-08",
+    "text": "Scheduler Event 1",
+    "barColor": "#8E44AD"
+},
+{
+    "id": "2307230357",
+    "resource": "H2",
+    "start": "2023-07-02",
+    "end": "2023-07-05",
+    "text": "Scheduler Event 2",
+    "barColor": "#5DADE2"
+}]

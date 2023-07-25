@@ -1,0 +1,65 @@
+<div class="form-container">
+  <h2 mat-dialog-title>Create New Event</h2>
+  <mat-dialog-content>
+    <form [formGroup]="schedulingForm" (ngSubmit)="save()">
+
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter Title" formControlName="title" required />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Time</mat-label>
+        <select matNativeControl required formControlName="time">
+          <option value="H1">9:00 AM</option>
+          <option value="H2">10:00 AM</option>
+          <option value="H3">11:00 AM</option>
+          <option value="H4">12:00 AM</option>
+          <option value="H5">15:00 PM</option>
+          <option value="H6">16:00 PM</option>
+          <option value="H7">17:00 PM</option>
+        </select>
+      </mat-form-field>
+
+
+      <mat-form-field>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <mat-form-field>
+            <mat-label>Choose start date</mat-label>
+            <input matInput [matDatepicker]="startdate" formControlName="pickerstartdate" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="startdate"></mat-datepicker-toggle>
+            <mat-datepicker #startdate></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+      </mat-form-field>
+      <mat-form-field>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <small class="text-danger" *ngIf="schedulingForm.hasError('notValid')">Enddate should be greater than the
+            startdate</small>
+          <mat-form-field>
+            <mat-label>Choose end date</mat-label>
+            <input matInput [matDatepicker]="enddate" formControlName="pickerenddate" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="enddate"></mat-datepicker-toggle>
+            <mat-datepicker #enddate></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </mat-form-field>
+
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="dialogRef.close(false)" color="primary">
+      Close
+    </button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!schedulingForm.valid" (click)="save()">Save
+    </button>
+
+    <!--   <button mat-raised-button color="primary" (click)="save()">
+      Save
+    </button> -->
+  </mat-dialog-actions>
+</div>
