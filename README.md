@@ -15,16 +15,20 @@ This application consists of the below features:
 
 ## Project Snapshots
 
-- Main Page:
+### - Main Page:
+  
 ![Screenshot](src/assets/images/screenshots/mainPage.png)
 
-- Create new event:
+### - Create new event:
+  
 ![Screenshot](src/assets/images/screenshots/newEvent.png)
 
-- Create new event by clicking on calender cell:
+### - Create new event by clicking on calender cell:
+  
 ![Screenshot](src/assets/images/screenshots/newEvent2.png)
 
-- Event resize:
+### - Event resize:
+  
 ![Screenshot](src/assets/images/screenshots/eventResize.png)
 
 ## Installation
