@@ -15,7 +15,7 @@ This application consists of the below features:
 
 ## Project Snapshots
 
-![Screenshot](screenshots/mainPage.png)
+![Screenshot](src/assets/images/screenshots/mainPage.png)
 
 ## Installation
 
